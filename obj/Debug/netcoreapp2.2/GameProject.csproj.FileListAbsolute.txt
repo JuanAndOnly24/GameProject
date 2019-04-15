@@ -1,0 +1,11 @@
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\bin\Debug\netcoreapp2.2\GameProject.deps.json
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\bin\Debug\netcoreapp2.2\GameProject.runtimeconfig.json
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\bin\Debug\netcoreapp2.2\GameProject.runtimeconfig.dev.json
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\bin\Debug\netcoreapp2.2\GameProject.dll
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\bin\Debug\netcoreapp2.2\GameProject.pdb
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\obj\Debug\netcoreapp2.2\GameProject.csprojAssemblyReference.cache
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\obj\Debug\netcoreapp2.2\GameProject.csproj.CoreCompileInputs.cache
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\obj\Debug\netcoreapp2.2\GameProject.AssemblyInfoInputs.cache
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\obj\Debug\netcoreapp2.2\GameProject.AssemblyInfo.cs
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\obj\Debug\netcoreapp2.2\GameProject.dll
+C:\Users\giann\source\repos\GameProjectSolution\GameProject\obj\Debug\netcoreapp2.2\GameProject.pdb

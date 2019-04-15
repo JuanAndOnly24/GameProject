@@ -8,7 +8,7 @@ namespace GameProject
         {
             int playerHP1 = 2000;
             int playerHP2 = 2000;
-            int i = 0;
+            int i;
             int dmg;
             int x;
             int power;
@@ -20,7 +20,6 @@ namespace GameProject
             {
                 Console.WriteLine("Choose Move:\n1.Right Hand Punch.\n2.Left Hand Punch.\n3.Right Foot Kick.\n4.Left Foot Kick.\n5.Spin Foot Kick\n6.Uppercut.");
                 i = Convert.ToInt32(Console.ReadLine());
-                x = 0;
 
                 switch (i)
                 {
@@ -30,15 +29,17 @@ namespace GameProject
                             x = PercentageGen.Next(-15, 61);
                             if (x <= 0)
                             {
-                                dmg = power - (power * -x / 100);
+                                dmg = power - (power * x / 100);
+                                playerHP1 = playerHP1 - dmg;
                                 Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Right Hand Punch.");
-                                Console.WriteLine("Opponents life is: " + (playerHP1 - dmg) + ".");
+                                Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             else if (x > 0)
                             {
                                 dmg = power + (power * x / 100);
+                                playerHP1 = playerHP1 - dmg;
                                 Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Right Hand Punch.");
-                                Console.WriteLine("Opponents life is: " + (playerHP1 - dmg) + ".");
+                                Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             break;
                         }
@@ -50,15 +51,15 @@ namespace GameProject
                             if (x <= 0)
                             {
                                 dmg = power - (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Left Hand Punch.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Left Hand Punch.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             else if (x > 0)
                             {
                                 dmg = power + (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Left Hand Punch.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Left Hand Punch.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             break;
@@ -70,15 +71,15 @@ namespace GameProject
                             if (x <= 0)
                             {
                                 dmg = power - (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Right Foot Kick.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Right Foot Kick.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             else if (x > 0)
                             {
                                 dmg = power + (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Right Foot Kick.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Right Foot Kick.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             break;
@@ -90,15 +91,15 @@ namespace GameProject
                             if (x <= 0)
                             {
                                 dmg = power - (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Left Foot Kick.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Left Foot Kick.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             else if (x > 0)
                             {
                                 dmg = power + (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Left Foot Kick.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Left Foot Kick.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             break;
@@ -110,15 +111,15 @@ namespace GameProject
                             if (x <= 0)
                             {
                                 dmg = power - (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Spin Foot Kick.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Spin Foot Kick.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             else if (x > 0)
                             {
                                 dmg = power + (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Spin Foot Kick.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Spin Foot Kick.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             break;
@@ -130,24 +131,21 @@ namespace GameProject
                             if (x <= 0)
                             {
                                 dmg = power - (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Uppercut.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Uppercut.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             else if (x > 0)
                             {
                                 dmg = power + (power * x / 100);
-                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Uppercut.");
                                 playerHP1 = playerHP1 - dmg;
+                                Console.WriteLine("You Did -" + dmg + "-DMG to the opponent with Uppercut.");
                                 Console.WriteLine("Opponents life is: " + playerHP1 + ".");
                             }
                             break;
                         }
 
                 }
-
-
-
             } while (playerHP1 >= 0);
         }
     }
